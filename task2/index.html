@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Task 2</title>
+    <meta name="description" content="">
+    <meta name="author" content="Max Zhuk">
+    <link rel="icon" href="./favicon.ico">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="./assets/logotype.png" alt="Insly" width="270">
+        <h2>Calculator form</h2>
+        <p class="lead">Simple text about form and insurance.</p>
+      </div>
+
+      <div class="row">
+        <div id="b-form-container" class="col-md-12 order-md-1">
+          <h4 class="mb-3"></h4>
+          <form id="b-insurance-form">
+            <div class="form-group">
+              <label for="estimatedValue">Estimated value of the car (100 - 100 000 EUR)</label>
+              <input id="estimatedValue" class="form-control" type="number" min="100" max="100000" name="est" value="100" required>
+            </div>
+            <div class="form-group">
+              <label for="tax">Tax percentage (0 - 100%)</label>
+              <input id="tax" class="form-control" type="number" min="0" max="100" name="tax" value="0" required>
+            </div>
+            <div class="form-group">
+              <label for="instalments">Number of instalments (1 - 12)</label>
+              <input id="instalments" class="form-control" type="number" min="1" max="12" name="instalments" value="1" required>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Calculate</button>
+          </form>
+        </div>
+
+        <div id="b-table-container" style="display: none" class="col-md-12 order-md-1">
+          <table id="b-table" class="table table-bordered">
+            <thead>
+            <tr id="b-table-headers">
+              <th scope="col">#</th>
+              <th scope="col">Policy</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">Value</th>
+            </tr>
+            <tr>
+              <td>Base premium (11%)</td>
+            </tr>
+            <tr>
+              <td>Commission (17%)</td>
+            </tr>
+            <tr>
+              <td>Tax (<span id="s-tax-holder"></span> )</td>
+            </tr>
+            <tr>
+              <th scope="row">Total cost</th>
+            </tr>
+            </tbody>
+          </table>
+
+          <hr class="mb-4">
+          <button id="back-button" type="button" class="btn btn-light">Back to form</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/main.js"></script>
+</html>
