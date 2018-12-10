@@ -85,3 +85,13 @@ MySQL database without errors.
 
 4. Add test data for one customer into database
 ```
+Data in file task_3.sql, example query:
+```sql
+SELECT * FROM insly_employees WHERE id = 1;
+
+SELECT t.title as type, l.title as language, i.text 
+FROM insly_employee_info i 
+LEFT JOIN insly_languages l ON l.id = i.language_id 
+LEFT JOIN insly_info_type t ON t.id = i.info_type_id
+WHERE i.employee_id = 1;
+```
