@@ -49,9 +49,8 @@ does not divide equally
 sum.
 ```
 
-You can find my answer in directory `./task2`. I use vanilla PHP 7 and JavaScript (ES5.1),
-but you didn't say something about Styles and that's why I'm using Facebook bootstrap 4
-css-file in `index.html`.
+You can find my answer in directory `./task2`. I used vanilla PHP 7 and JavaScript (ES5.1),
+and Facebook bootstrap 4 css-file in `index.html`.
 
 If you want check this task in browser then start php server: 
 `cd ./test2 | php -S localhost:9001`. You can open http://localhost:9001 in browser now.
